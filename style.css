@@ -1,0 +1,389 @@
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url("//fonts.gstatic.com/s/oswald/v16/cgaIrkaP9Empe8_PwXbajPY6323mHUZFJMgTvxaG2iE.eot?#iefix") format("eot"),
+    url("//fonts.gstatic.com/s/oswald/v16/cgaIrkaP9Empe8_PwXbajFtXRa8TVwTICgirnJhmVJw.woff2") format("woff2"),
+    url("//fonts.gstatic.com/s/oswald/v16/cgaIrkaP9Empe8_PwXbajD8E0i7KZn-EPnyo3HZu7kw.woff") format("woff"),
+    url("//fonts.gstatic.com/s/oswald/v16/cgaIrkaP9Empe8_PwXbajKCWcynf_cDxXwCLxiixG1c.ttf") format("truetype"),
+    url("//fonts.gstatic.com/l/font?kit=cgaIrkaP9Empe8_PwXbajJbd9NUM7myrQQz30yPaGQ4&skey=4b4aed5676a34753&v=v16#Oswald") format("svg");
+}
+
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url("//fonts.gstatic.com/s/oswald/v16/dI-qzxlKVQA6TUC5RKSb3_Y6323mHUZFJMgTvxaG2iE.eot?#iefix") format("eot"),
+    url("//fonts.gstatic.com/s/oswald/v16/dI-qzxlKVQA6TUC5RKSb31tXRa8TVwTICgirnJhmVJw.woff2") format("woff2"),
+    url("//fonts.gstatic.com/s/oswald/v16/dI-qzxlKVQA6TUC5RKSb3z8E0i7KZn-EPnyo3HZu7kw.woff") format("woff"),
+    url("//fonts.gstatic.com/s/oswald/v16/dI-qzxlKVQA6TUC5RKSb36CWcynf_cDxXwCLxiixG1c.ttf") format("truetype"),
+    url("//fonts.gstatic.com/l/font?kit=dI-qzxlKVQA6TUC5RKSb35bd9NUM7myrQQz30yPaGQ4&skey=23b674776eaa386b&v=v16#Oswald") format("svg");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), local("Raleway-Regular"), url("https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ITw.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Bold"), local("Raleway-Bold"), url("https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwJYtWqZPAA.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Bold Italic"), local("Raleway-BoldItalic"), url("https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgw9qR_AtCb.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 700;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Helvetica-W01-Roman";
+  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ea95b44a-eab7-4bd1-861c-e73535e7f652.eot?#iefix") format("eot"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/4021a3b9-f782-438b-aeb4-c008109a8b64.woff") format("woff"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/669f79ed-002c-4ff6-965c-9da453968504.ttf") format("truetype"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/d17bc040-9e8b-4397-8356-8153f4a64edf.svg#d17bc040-9e8b-4397-8356-8153f4a64edf") format("svg");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 4rem 0 4rem;
+  font-family: "Raleway";
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #5CDB95;
+  text-align: center;
+}
+
+.logo a {
+  font-weight: bold;
+  color: #5CDB95;
+  
+}
+
+a {
+  text-decoration: none;
+  font-family: "Oswald-Medium";
+  color: #fff;
+}
+
+.logo span {
+  margin-top: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links ul {
+  display: flex;
+}
+
+.nav-links li:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.welcome {
+  display: flex;
+  padding: 5rem 25rem 0 25rem;
+  min-height: calc(100vh - 6rem);
+  font-family: "Raleway";
+  font-size: 0.9rem;
+}
+
+.welcome-text {
+  display: grid;
+  grid-template-rows: min-content min-content 1fr;
+  margin-left: 5rem;
+  width: 28rem;
+}
+
+.yellow {
+  color: #ffc03a;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: "Oswald-Medium";
+}
+
+.title {
+  width: 460px;
+  font-size: 5rem;
+  color: #ffc03a;
+  padding: 6rem 0 0 0;
+  font-weight: bold;
+  font-family: "Oswald-Medium";
+}
+
+.slogan {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+ol {
+  list-style: decimal;
+  margin: 3rem 0 0 2rem;
+}
+
+.steps li:not(:first-child) {
+  margin: 1rem 0 0 0;
+}
+
+.steps li:last-child {
+  font-weight: bold;
+}
+
+.whatWeLike {
+  background-color: #191919;
+  padding: 3rem 0 3rem 0;
+  text-align: center;
+}
+
+.whatWeLike p {
+  width: 50%;
+  margin: auto;
+  margin-top: 2rem;
+  font-family: "Raleway";
+  font-style: italic;
+  line-height: 1.5rem;
+}
+
+.video-presentation {
+  height: 37.5rem;
+}
+
+video {
+  height: 37.5rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
+}
+
+.display img {
+  width: 100%;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote span {
+  margin-top: 2rem;
+}
+
+.sub {
+  font-family: "Raleway";
+  font-weight: bold;
+}
+
+form {
+  margin-top: 2rem;
+}
+
+input {
+  background-color: #000;
+  width: 60rem;
+  margin-top: 1rem;
+  border: 1px solid #fff;
+  padding: 1rem;
+  color: #fff;
+}
+
+textarea {
+  background-color: #000;
+  resize: none;
+  width: 60rem;
+  height: 10rem;
+  margin-top: 1rem;
+  border: 1px solid #fff;
+  padding: 1rem;
+  color: #fff;
+  font-family: "Arial";
+}
+
+.submit-button {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.submit-button button {
+  background-color: #fff;
+  width: 15rem;
+  height: 4rem;
+  font-family: "Helvetica-W01-Roman";
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  padding: 0;
+  border: 0;
+}
+
+.info {
+  margin-top: 4rem;
+  font-size: 1.2rem;
+  font-family: "Raleway";
+}
+
+footer {
+  background-color: #191919;
+  margin-top: 5rem;
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+  font-family: "Raleway";
+}
+
+@media (max-width: 1200px) {
+  nav {
+    margin: 1rem;
+    font-size: 11px;
+  }
+
+  .nav-links {
+    font-size: 14px;
+  }
+
+  .welcome {
+    display: block;
+    padding: 0;
+    font-size: 0.9rem;
+    min-height: 50vh;
+    margin-bottom: 1rem;
+  }
+
+  .welcome img {
+    width: 100vw;
+    height: 10rem;
+    object-fit: cover;
+    object-position: 50% 10%;
+  }
+
+  .welcome-text {
+    display: grid;
+    grid-template-rows: min-content min-content 1fr;
+    margin-left: 0;
+    width: 100vw;
+  }
+
+  .title {
+    width: 100vw;
+    font-size: 2rem;
+    padding: 1rem 0 0 0;
+    text-align: center;
+    margin-top: 0.25rem;
+  }
+
+  .slogan {
+    text-align: center;
+  }
+
+  .steps p {
+    margin: 0 1rem 0 1rem;
+  }
+
+  .whatWeLike {
+    padding: 1rem 0 1rem 0;
+  }
+
+  .whatWeLike p {
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 15px;
+  }
+
+  .video-presentation {
+    height: 20rem;
+  }
+
+  video {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .display img {
+    height: 20rem;
+    object-fit: cover;
+    object-position: 20% 0px;
+  }
+
+  .quote span {
+    text-align: center;
+  }
+
+  .quote .yellow {
+    font-size: 2rem;
+  }
+
+  input {
+    background-color: #000;
+    width: calc(100vw - 3rem);
+    margin-top: 1rem;
+    border: 1px solid #fff;
+    padding: 1rem;
+    color: #fff;
+  }
+
+  textarea {
+    background-color: #000;
+    resize: none;
+    width: calc(100vw - 3rem);
+    height: 10rem;
+    margin-top: 1rem;
+    border: 1px solid #fff;
+    padding: 1rem;
+    color: #fff;
+    font-family: "Arial";
+  }
+
+  .submit-button {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .submit-button button {
+    background-color: #fff;
+    width: 15rem;
+    height: 4rem;
+    font-family: "Helvetica-W01-Roman";
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    padding: 0;
+    border: 0;
+  }
+
+  footer {
+    background-color: #191919;
+    margin-top: 5rem;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+    font-family: "Raleway";
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .welcome {
+    padding: 2rem 0 2rem 5rem;
+  }
+}
