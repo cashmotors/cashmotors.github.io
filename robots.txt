@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.cashmotors.co.uk/sitemap.xml
