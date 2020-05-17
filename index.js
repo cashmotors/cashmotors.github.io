@@ -15,6 +15,7 @@ const init = function () {
 const submit = function (e) {
   const contactName = document.getElementById("contactName").value || "Not provided";
   const contactNumber = document.getElementById("contactNumber").value;
+  const emailAddress = document.getElementById("emailAddress").value || "Not provided";
   const vehicleModel = document.getElementById("vehicleModel").value || "Not provided";
   const vehicleReg = document.getElementById("vehicleReg").value || "Not provided";
   const mileage = document.getElementById("mileage").value || "Not provided";
@@ -34,7 +35,7 @@ const submit = function (e) {
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify({ contactName, contactNumber, vehicleModel, vehicleReg, mileage, vehicleComments, postalCode })
+    body: JSON.stringify({ contactName, contactNumber, emailAddress, vehicleModel, vehicleReg, mileage, vehicleComments, postalCode })
   };
 
   fetch("https://cashmotors.herokuapp.com/", options)
