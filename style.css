@@ -155,6 +155,9 @@ ol {
   background-color: #191919;
   padding: 3rem 0 3rem 0;
   text-align: center;
+  font-family: "Raleway";
+  font-style: italic;
+  line-height: 1.5rem;
 }
 
 .whatWeLike p {
@@ -380,6 +383,12 @@ footer {
     text-align: center;
     font-family: "Raleway";
   }
+}
+
+h2 {
+  font-family: "Raleway";
+  font-style: italic;
+  line-height: 1.5rem;
 }
 
 @media (min-width: 1200px) and (max-width: 1440px) {
