@@ -49,6 +49,20 @@
 
   gtag('config', 'AW-639664867');
 </script>
+    <script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-639664867/tOIaCL2mvvwBEOOFgrEC',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
   </head>
   <body>
     <header>
@@ -110,7 +124,7 @@
         <textarea id="vehicleComments" placeholder="Comments about your vehicle"></textarea><br />
         <input type="text" id="postalCode" name="postalCode" placeholder="Postal Code" /><br />
         <div class="submit-button">
-          <button id="submit" class="submit" type="submit">Submit</button>
+          <button onclick="gtag_report_conversion(window.location)" id="submit" class="submit" type="submit">Submit</button>
         </div>
       </form>
       <div class="info">
