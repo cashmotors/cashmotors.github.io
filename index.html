@@ -124,7 +124,7 @@ function gtag_report_conversion(url) {
         <textarea id="vehicleComments" placeholder="Comments about your vehicle"></textarea><br />
         <input type="text" id="postalCode" name="postalCode" placeholder="Postal Code" /><br />
         <div class="submit-button">
-          <button onclick="gtag_report_conversion(window.location)" id="submit" class="submit" type="submit">Submit</button>
+          <button onsubmit="gtag_report_conversion(window.location)" id="submit" class="submit" type="submit">Submit</button>
         </div>
       </form>
       <div class="info">
