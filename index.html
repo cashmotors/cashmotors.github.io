@@ -134,6 +134,23 @@ function gtag_report_conversion(url) {
         </span>
       </div>
     </section>
-    <footer>©2020 by Cash Motors.</footer>
+    <footer>©2020 by Cash Motors.
+      <script type="text/javascript">
+  window.addEventListener('load',function(){
+    var x =0;
+    var timer=setInterval(function(){
+      if(document.querySelector('#info').innerText.indexOf('submited successfully')!=-1){
+        if(x==0){
+          gtag('event', 'conversion', {
+            'send_to': 'AW-639664867/tOIaCL2mvvwBEOOFgrEC'
+          });
+          x=1;
+        }
+        clearInterval(timer);
+      }
+    })
+    })
+</script>
+    </footer>
   </body>
 </html>
